@@ -1,19 +1,16 @@
 /** Simple Encryptor
  *  This program encrypts and decrypts your text documents
  *  both works both with drag & drop and executable
- *  in 01 2020 from Kaan Yýlmaz
+ *  in 01 2020 from Kaan Yilmaz
  *
  * */
 
 #include <iostream>
 #include <string>
-#include <fstream>
 #include <stdio.h>
 #include "LZWComp.h"
-#include <thread>
 #include <unistd.h>
-#include <locale.h>
-#include <clocale>
+
 
 using namespace std;
 
@@ -27,12 +24,7 @@ bool fileexists(string filename){ //file existence checker
 }
 
 int main(int argc, char *argv[]) {
-    char *str1;
-    setlocale(LC_ALL, "Turkish");
-    str1 = setlocale(LC_ALL, NULL);
     system("Color 80");
-    //cout << "Current locale: " << str1 << endl;
-
     LZWComp *LZW;
     string filename;
     string command;
@@ -56,7 +48,7 @@ int main(int argc, char *argv[]) {
             cout << "to decrypt your file, place both in directory" << endl;
             cout << "use program to process .lzw file" << endl;
             cout << "tip: drag & drop also works" << endl;
-            cout << "**Simple Encryptor by Kaan Yýlmaz**" << endl;
+            cout << "**Simple Encryptor by Kaan Yï¿½lmaz**" << endl;
             system("pause");
             goto Jump;
 
