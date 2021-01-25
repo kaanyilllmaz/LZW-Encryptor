@@ -48,7 +48,7 @@ int main(int argc, char *argv[]) {
             cout << "to decrypt your file, place both in directory" << endl;
             cout << "use program to process .lzw file" << endl;
             cout << "tip: drag & drop also works" << endl;
-            cout << "**Simple Encryptor by Kaan Y�lmaz**" << endl;
+            cout << "**Simple Encryptor by Kaan Yilmaz**" << endl;
             system("pause");
             goto Jump;
 
